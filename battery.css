@@ -1,0 +1,81 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+#wrepper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 100vh;
+    background: #ddd6f3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #54f02d, #e28819);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #eaaf2e, #edea2d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.battery{
+    width:70%;
+    margin:0 auto;
+    background:linear-gradient(rgb(227, 172, 90),rgb(180, 171, 91), rgb(0, 10, 14));
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bat{
+    width:500px;
+    height: 250px;
+    border:1rem solid black;
+    border-radius: 5px;
+    
+}
+.bat1{
+    width:70px;
+    height: 100px;
+    border:1rem solid black;
+    background-color: black;
+}
+.bati{
+    width:468px;
+    height: 218px;
+    border:1rem solid rgb(42, 21, 229);
+    /* background:linear-gradient( purple,yellow); */
+    position: relative;
+    /* animation: me 4s 0s ease-out infinite; */
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bati:before{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    background:linear-gradient( rgb(180, 178, 180),rgb(16, 16, 16),rgb(177, 177, 166));
+    width:100%;
+    height: 100%;
+    transition: all 1s ease;
+    animation: me 5s 0s ease-out infinite;
+    z-index: -1;
+}
+.bati:hover::before{
+    left:0;
+}
+@keyframes me{
+    0%{width:15%}
+    25%{width:25%}
+    50%{width:50%}
+    75%{width:75%}
+    100%{width:100%}
+}
+i{
+    
+    font-size: 150px;
+    color:rgb(168, 98, 98);
+  
+  
+
+}
